@@ -1,0 +1,4 @@
+samples:
+  PN002:  /fh/scratch/delete90/ha_g/Collaborator_Data/WGS/fastq_to_bam_paired_snakemake/results/PN002/PN002_recalibrated.bam
+  PN017:  /fh/scratch/delete90/ha_g/Collaborator_Data/WGS/fastq_to_bam_paired_snakemake/results/PN017/PN017_recalibrated.bam
+  PN019:  /fh/scratch/delete90/ha_g/Collaborator_Data/WGS/fastq_to_bam_paired_snakemake/results/PN019/PN019_recalibrated.bam
