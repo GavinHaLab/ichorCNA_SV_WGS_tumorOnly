@@ -16,7 +16,7 @@ Please specify the samples to be analyzed in config/samples.yaml, following the 
 ## config/config.yaml
 There are a number of parameters to adjust in config/config.yaml.  Filepaths to where your ichorCNA repository as well as the filepath to readCounterScript and Svaba.
 
-# Running the snakamake workflows on slurm cluster
+# Running the snakemake workflows on slurm cluster
 
 `snakemake -s ichorCNA.snakefile --latency-wait 60 --restart-times 3 --keep-going --cluster-config config/cluster_slurm.yaml --cluster "sbatch -p {cluster.partition} --mem={cluster.mem} -t {cluster.time} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output}" -j 30`
 
