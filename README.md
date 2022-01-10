@@ -1,13 +1,12 @@
 # Snakemake workflow for ichorCNA_SV_WGS_tumorOnly
 
 # Modules to load
-  * ml snakemake/5.2.4-foss-2016b-Python-3.6.6
-  * ml R/3.6.1-foss-2016b-fh1
-  * ml Python/3.6.6-foss-2016b
-  * ml BCFtools/1.9-foss-2016b
-  * ml Pysam/0.15.1-foss-2016b-Python-3.6.6
-  * ml PyYAML/3.13-foss-2016b-Python-3.6.6
-  * ml SAMtools/1.9-foss-2016b
+ * ml snakemake/5.19.2-foss-2019b-Python-3.7.4
+ * ml R/3.6.2-foss-2019b-fh1
+ * ml Python/3.7.4-foss-2019b-fh1
+ * ml BCFtools/1.9-GCC-8.3.0
+ * ml Pysam/0.15.4-GCC-8.3.0-Python-3.7.4
+ * ml PyYAML/5.1.2-GCCcore-8.3.0-Python-3.7.4
   
 # Set-up
 ## config/samples.yaml
