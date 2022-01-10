@@ -1,10 +1,10 @@
 ## path to tools
-svaba_exe:  /fh/fast/ha_g/app/bin/svaba
+svaba_exe:  /path/to/svaba
 
 ## path to scripts
-readCounterScript:  /fh/fast/ha_g/app/bin/readCounter
-ichorCNA_rscript:  /fh/fast/ha_g/user/mko/ichorCNA/scripts/runIchorCNA.R
-ichorCNA_libdir:  /fh/fast/ha_g/user/mko/ichorCNA # include if ichorCNA R source files changed but package has not been updated within R
+readCounterScript:  /path/to/readCounter
+ichorCNA_rscript:  /path/to/ichorCNA/scripts/runIchorCNA.R
+ichorCNA_libdir:  /path/to/ichorCNA # include if ichorCNA R source files changed but package has not been updated within R
 
 svaba_funcs:  code/svaba_utils.R
 plot_funcs:  code/plotting.R
@@ -17,8 +17,8 @@ plotSVCNichor_script: code/plotIchorSvaba.R
 # use this for UCSC chr naming
 chrs: chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22,chrX,chrY
 binSize:  10000 # set window size to compute coverage
-refFasta:  /fh/fast/ha_g/grp/reference/GRCh38/10XG/refdata-GRCh38-2.1.0/fasta/genome.fa
-cytobandFile:  /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/cytoBand_hg38.txt # only need if hg38
+refFasta:  /path/to/genome.fa
+cytobandFile:  /path/to/ichorCNA/inst/extdata/cytoBand_hg38.txt # only need if hg38
 
 
 ## ichorCNA params ##
@@ -26,13 +26,13 @@ cytobandFile:  /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/cytoBand_hg38.txt # 
 # use panel matching same bin size (optional)
 #ichorCNA_normalPanel: ../../inst/extdata/HD_ULP_PoN_hg38_1Mb_median_normAutosome_median.rds
 # must use gc wig file corresponding to same binSize (required)
-ichorCNA_gcWig: /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/gc_hg38_10kb.wig
+ichorCNA_gcWig: /path/to/ichorCNA/inst/extdata/gc_hg38_10kb.wig
 # must use map wig file corresponding to same binSize (required)
-ichorCNA_mapWig:  /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/map_hg38_10kb.wig
+ichorCNA_mapWig:  /path/to/ichorCNA/inst/extdata/map_hg38_10kb.wig
 # use bed file if sample has targeted regions, eg. exome data (optional)
-ichorCNA_repTimeWig: /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/RepTiming_hg38_10kb.wig
+ichorCNA_repTimeWig: /path/to/ichorCNA/inst/extdata/RepTiming_hg38_10kb.wig
 ichorCNA_exons:  NULL
-ichorCNA_centromere:  /fh/fast/ha_g/user/mko/ichorCNA/inst/extdata/GRCh38.GCA_000001405.2_centromere_acen.txt
+ichorCNA_centromere:  /path/to/ichorCNA/inst/extdata/GRCh38.GCA_000001405.2_centromere_acen.txt
 ichorCNA_minMapScore: 0.75
 ichorCNA_maxFracGenomeSubclone: 0.5
 ichorCNA_maxFracCNASubclone: 0.7
@@ -66,7 +66,7 @@ ichorCNA_plotFileType:  pdf
 ichorCNA_plotYlim:  c(-2,4)
 
 ## SVABA settings ##
-svaba_dbSNPindelVCF:  /fh/fast/ha_g/grp/reference/GRCh38/known_polymorphic_sites/resources_broad_hg38_v0_Homo_sapiens_assembly38.known_indels.vcf.gz
+svaba_dbSNPindelVCF:  /path/to/resources_broad_hg38_v0_Homo_sapiens_assembly38.known_indels.vcf.gz
 svaba_minSPAN:  10000
 svaba_minInversionSPAN: 1000
 svaba_numThreads: 4 #make sure this is okay
